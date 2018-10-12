@@ -1,0 +1,13 @@
+// Imports
+
+// Framework
+@import './framework/colors';
+@import './framework/typography';
+@import './framework/icons';
+
+@import './mixins';
+@import './media';
+
+body {
+    background-color: lightgrey;
+}

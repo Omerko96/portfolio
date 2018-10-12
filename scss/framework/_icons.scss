@@ -1,0 +1,19 @@
+// Imports
+@import '../mixins';
+
+// Social Icons
+.fa.social-icon {
+    font-size: 30px;
+    padding: 16px;
+    color: $main-blue;
+    background-color: $white;
+    border-radius: 100%;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+    @include transition(all linear 0.3s);
+    &:hover {
+        background-color: $font-color;
+        color: $light-blue;
+    }
+}
