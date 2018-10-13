@@ -1,0 +1,21 @@
+// Imports
+@import '../mixins';
+
+// Main Button
+.btn-main {
+    background-color: transparent;
+    color: $main-blue;
+    border: 3px solid $main-blue;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include border-radius(0px);
+    @include transition(all linear 0.3s);
+    &:hover, &:active, &:focus {
+        background-color: $main-blue;
+        color: $white;
+        @include box-shadow(0 14px 26px -12px rgba(40, 190, 189, 0.42));
+    }
+}

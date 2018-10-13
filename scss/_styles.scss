@@ -4,10 +4,10 @@
 @import './framework/colors';
 @import './framework/typography';
 @import './framework/icons';
+@import './framework/buttons';
+
+// Sections
+@import './sections/sidebar';
 
 @import './mixins';
 @import './media';
-
-body {
-    background-color: lightgrey;
-}

@@ -43,7 +43,74 @@ p {
   transition: all linear 0.3s; }
   .fa.social-icon:hover {
     background-color: #383f48;
-    color: #26c6da; }
+    color: #ffffff; }
 
-body {
-  background-color: lightgrey; }
+.btn-main {
+  background-color: transparent;
+  color: #28a7e9;
+  border: 3px solid #28a7e9;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transition: all linear 0.3s; }
+  .btn-main:hover, .btn-main:active, .btn-main:focus {
+    background-color: #28a7e9;
+    color: #ffffff;
+    -webkit-box-shadow: 0 14px 26px -12px rgba(40, 190, 189, 0.42);
+    -moz-box-shadow: 0 14px 26px -12px rgba(40, 190, 189, 0.42);
+    -ms-box-shadow: 0 14px 26px -12px rgba(40, 190, 189, 0.42);
+    -o-box-shadow: 0 14px 26px -12px rgba(40, 190, 189, 0.42);
+    box-shadow: 0 14px 26px -12px rgba(40, 190, 189, 0.42); }
+
+#sidebar {
+  width: 230px;
+  height: 100vh;
+  position: relative;
+  background-color: #272c33;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #sidebar .inner-sidebar {
+    width: 100%;
+    height: 60%; }
+    #sidebar .inner-sidebar .logo-image {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      border: 5px solid #28a7e9;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      border-radius: 100%; }
+    #sidebar .inner-sidebar ul {
+      margin: 40px; }
+      #sidebar .inner-sidebar ul li {
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px 0px; }
+        #sidebar .inner-sidebar ul li a {
+          color: #ffffff;
+          text-decoration: none;
+          -webkit-transition: all linear 0.3s;
+          -moz-transition: all linear 0.3s;
+          -ms-transition: all linear 0.3s;
+          -o-transition: all linear 0.3s;
+          transition: all linear 0.3s; }
+          #sidebar .inner-sidebar ul li a:hover, #sidebar .inner-sidebar ul li a:active, #sidebar .inner-sidebar ul li a:focus {
+            color: #28a7e9; }

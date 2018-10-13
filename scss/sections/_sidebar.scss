@@ -1,0 +1,39 @@
+// Sidebar
+#sidebar {
+    width: 230px;
+    height: 100vh;
+    position: relative;
+    background-color: $main-bg;
+    display: grid;
+    align-items: center;
+    .inner-sidebar {
+        width: 100%;
+        height: 60%;
+        .logo-image {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            border: 5px solid $main-blue;
+            @include border-radius(100%);
+        }
+        ul {
+            margin: 40px;
+            li {
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Roboto Slab', serif;
+                font-weight: 500;
+                text-transform: uppercase;
+                padding: 10px 0px;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    @include transition(all linear 0.3s);
+                    &:hover, &:active, &:focus {
+                        color: $main-blue;
+                    }
+                }
+            }
+        }
+    }
+}
