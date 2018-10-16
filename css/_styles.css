@@ -30,20 +30,20 @@ p {
 .fa.social-icon {
   font-size: 30px;
   padding: 16px;
-  color: #28a7e9;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #272c33;
   border-radius: 100%;
   width: 70px;
   text-align: center;
   margin: 10px;
+  text-decoration: none;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
   transition: all linear 0.3s; }
   .fa.social-icon:hover {
-    background-color: #383f48;
-    color: #ffffff; }
+    color: #28a7e9; }
 
 .btn-main {
   background-color: transparent;
@@ -76,12 +76,13 @@ p {
 #sidebar {
   width: 230px;
   height: 100vh;
-  position: relative;
+  position: fixed;
   background-color: #272c33;
   display: grid;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 2; }
   #sidebar .inner-sidebar {
     width: 100%;
     height: 60%; }
@@ -114,3 +115,26 @@ p {
           transition: all linear 0.3s; }
           #sidebar .inner-sidebar ul li a:hover, #sidebar .inner-sidebar ul li a:active, #sidebar .inner-sidebar ul li a:focus {
             color: #28a7e9; }
+
+#about {
+  display: grid;
+  grid-auto-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  height: 100vh;
+  margin-left: 230px;
+  max-width: 1150px; }
+  #about .sub-heading {
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-family: 'Roboto Slab', serif; }
+  #about .blue {
+    color: #28a7e9 !important; }
+  #about p {
+    line-height: 18px;
+    padding-top: 20px; }

@@ -5,15 +5,15 @@
 .fa.social-icon {
     font-size: 30px;
     padding: 16px;
-    color: $main-blue;
-    background-color: $white;
+    color: $white;
+    background-color: $main-bg;
     border-radius: 100%;
     width: 70px;
     text-align: center;
     margin: 10px;
+    text-decoration: none;
     @include transition(all linear 0.3s);
     &:hover {
-        background-color: $font-color;
-        color: $white;
+        color: $main-blue;
     }
 }

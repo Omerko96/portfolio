@@ -1,0 +1,23 @@
+// About
+#about {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    margin-left: 230px;
+    max-width: 1150px;
+    .sub-heading {
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 26px;
+        font-family: 'Roboto Slab', serif;
+    }
+    .blue {
+        color: $main-blue !important;
+    }
+    p {
+        line-height: 18px;
+        padding-top: 20px;
+    }
+}
