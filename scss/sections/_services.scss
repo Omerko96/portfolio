@@ -1,0 +1,28 @@
+// Services
+#services {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    margin-left: 230px;
+    max-width: 1150px;
+    .service-block {
+        margin-top: 20px;
+        .fa {
+            font-size: 50px;
+            border-radius: 100%;
+            width: 90px;
+            text-align: center;
+            padding: 16px;
+            background-color: $main-bg;
+            color: $white;
+            @include transition(all linear 0.3s);
+        }
+        &:hover .fa{
+            background-color: $main-bg;
+            color: $main-blue;
+            transform: rotateY(180deg);
+        }
+    }
+}
