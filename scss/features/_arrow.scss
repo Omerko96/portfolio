@@ -1,0 +1,23 @@
+// Arrow
+#arrow {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+  background-color: $main-bg;
+  width: 80px;
+  border-radius: 100%;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  z-index: 2;
+  @include transition(all linear 0.4s);
+  a {
+    font-size: 40px;
+    color: $main-blue;
+  }
+}
+
+.animate-arrow {
+  opacity: 1 !important;
+}
