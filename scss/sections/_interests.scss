@@ -1,0 +1,10 @@
+// Interests
+#interests {
+  display: grid;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+  margin-left: 230px;
+  max-width: 1150px;
+}
