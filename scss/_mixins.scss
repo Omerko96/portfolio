@@ -16,6 +16,15 @@
     box-shadow: $box-shadow;
 }
 
+// Text Shadow Mixin
+@mixin text-shadow($text-shadow) {
+    -webkit-text-shadow: $text-shadow;
+    -moz-text-shadow: $text-shadow;
+    -ms-text-shadow: $text-shadow;
+    -o-text-shadow: $text-shadow;
+    text-shadow: $text-shadow;
+}
+
 // Border Radius Mixin
 @mixin border-radius($border-radius) {
     -webkit-border-radius: $border-radius;

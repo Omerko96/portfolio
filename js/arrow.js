@@ -2,7 +2,6 @@
 const arrow = document.querySelector('#arrow');
 
 function showArrow() {
-  console.log(arrow);
   if(window.scrollY < 1000) {
     arrow.classList.remove('animate-arrow');
   } else {
