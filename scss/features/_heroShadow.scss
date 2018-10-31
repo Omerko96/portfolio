@@ -1,0 +1,15 @@
+// Hero Shadow for Omerko Text
+.hero {
+  text-align: center;
+  margin-top: -200px;
+  margin-bottom: 50px;
+  display: grid;
+  align-items: center;
+  height: 200px;
+  h1{
+      font-size: 40px;
+      color: $white;
+      text-transform: uppercase;
+      @include text-shadow(5px 5px 0 rgba(0,0,0,0.5));
+  }
+}

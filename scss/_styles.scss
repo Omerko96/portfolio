@@ -13,10 +13,13 @@
 @import './sections/experience';
 @import './sections/skills';
 @import './sections/interests';
+@import './sections/contact';
+@import './sections/copyright';
 
 // Features
 @import './features/arrow';
 @import './features/progressBars';
+@import './features/heroShadow.scss';
 
 @import './mixins';
 @import './media';
