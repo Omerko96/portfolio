@@ -33,3 +33,21 @@
     -o-border-radius: $border-radius;
     border-radius: $border-radius;
 }
+
+// Animation Mixin
+@mixin animation($animation) {
+    -webkit-animation: $animation;
+    -moz-animation: $animation;
+    -ms-animation: $animation;
+    -o-animation: $animation;
+    animation: $animation;
+}
+
+// Transform
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}

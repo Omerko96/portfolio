@@ -16,8 +16,19 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Sub Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    <!-- Validator -->
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css">
   </head>
   <body>
+
+    <!-- Preloader -->
+
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>  <!-- End of Preloader -->
 
     <!-- Arrow to bring me back to top -->
     <div id="arrow">
@@ -252,7 +263,7 @@
         <div class="row">
           <div class="col-xs-12">
             <p>If you wish, you can contact me here directly.</p>
-            <form>
+            <form id="contact_form">
               <div class="form-group">
                 <label for="firstName">First Name:</label>
                 <input type="text" class="form-control input-field" id="firstName" name="firstName" placeholder="Your First Name" required>
@@ -277,6 +288,11 @@
                 <input type="submit" class="btn" value="Submit">
               </div>  <!-- End of Form Group -->
             </form> <!-- End of Form -->
+            <div id="confirmation" class="hidden text-center">
+              <span class="fa fa-check-circle-o"></span>
+              <p>Thank you for sending a message!</p>
+              <span>I will get in contact with you soon.</span>
+            </div>
           </div>
         </div>  <!-- End of Row -->
       </div>  <!-- End of Container -->
@@ -306,5 +322,10 @@
     <script src="js/progressBar.js"></script>
     <!-- Hero Text Shadow Animation -->
     <script src="js/heroShadow.js"></script>
+    <!-- Preloader -->
+    <script src="js/preloader.js"></script>
+    <!-- Validator -->
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script src="js/validator.js"></script>
   </body>
 </html>

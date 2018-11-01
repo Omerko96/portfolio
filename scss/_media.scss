@@ -76,6 +76,12 @@
         display: block;
         margin-left: 0px;
         text-align: center;
+        #confirmation {
+            display: block;
+            height: auto;
+            margin: 30px auto;
+            max-width: 500px;
+        }
     }
 }
 
@@ -94,6 +100,12 @@
         }
         .sub-heading {
             font-size: 16px;
+        }
+    }
+
+    #contact {
+        #confirmation {
+            max-width: 270px;;
         }
     }
 }

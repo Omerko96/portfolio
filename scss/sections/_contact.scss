@@ -45,6 +45,30 @@
         background-color: $main-blue;
       }
     }
+    .form-control-feedback {
+      top: 28px;
+    }
+    .help-block {
+      color: #C6363C;
+      font-size: 14px;
+      font-family: 'Raleway', sans-serif;
+    }
+  }
+  #confirmation {
+    margin-top: 30px;
+    padding: 15px;
+    width: 600px;
+    height: 250px;
+    background-color: $white;
+    border: 2px solid $main-blue;
+    display: grid;
+    align-items: center;
+    @include border-radius(6px);
+    @include transition(all linear 1s);
+    .fa {
+      font-size: 80px;
+      color: $main-blue;
+    }
   }
 }
 
