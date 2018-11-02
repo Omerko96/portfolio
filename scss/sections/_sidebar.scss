@@ -34,6 +34,9 @@
                         color: $main-blue;
                     }
                 }
+                .active {
+                    color: $main-blue !important;
+                }
             }
         }
     }

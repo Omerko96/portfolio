@@ -115,6 +115,8 @@ p {
           transition: all linear 0.3s; }
           #sidebar .inner-sidebar ul li a:hover, #sidebar .inner-sidebar ul li a:active, #sidebar .inner-sidebar ul li a:focus {
             color: #28a7e9; }
+        #sidebar .inner-sidebar ul li .active {
+          color: #28a7e9 !important; }
 
 #about {
   display: grid;
@@ -345,6 +347,81 @@ p {
   #copyright p {
     color: #28a7e9;
     font-weight: 300; }
+
+.navbar {
+  background-color: #272c33;
+  padding: 20px 0px;
+  z-index: 10; }
+  .navbar .navbar-header {
+    float: none; }
+    .navbar .navbar-header .logo img {
+      width: 80px;
+      height: 80px;
+      border: 3px solid #28a7e9;
+      padding: 0px;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      border-radius: 100%; }
+  .navbar .navbar-right {
+    float: none !important; }
+  .navbar .navbar-toggle {
+    display: block;
+    margin-top: 20px;
+    border: 2px solid #28a7e9;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    transition: all linear 0.4s; }
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus {
+      background-color: #ffffff; }
+    .navbar .navbar-toggle .icon-bar {
+      background: #28a7e9; }
+  .navbar .navbar-collapse {
+    overflow: hidden; }
+    .navbar .navbar-collapse .navbar-nav {
+      float: none !important;
+      margin-top: 7.5px;
+      text-align: center; }
+      .navbar .navbar-collapse .navbar-nav li {
+        float: none;
+        font-size: 16px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 10px 0px; }
+        .navbar .navbar-collapse .navbar-nav li a {
+          display: inline;
+          color: #ffffff;
+          text-decoration: none;
+          -webkit-transition: all linear 0.3s;
+          -moz-transition: all linear 0.3s;
+          -ms-transition: all linear 0.3s;
+          -o-transition: all linear 0.3s;
+          transition: all linear 0.3s; }
+          .navbar .navbar-collapse .navbar-nav li a:hover, .navbar .navbar-collapse .navbar-nav li a:active, .navbar .navbar-collapse .navbar-nav li a:focus {
+            color: #28a7e9; }
+        .navbar .navbar-collapse .navbar-nav li .active {
+          color: #28a7e9 !important; }
+  .navbar .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar .collapse.in {
+    display: block !important; }
+
+#portfolio {
+  display: grid;
+  grid-auto-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  height: 100vh;
+  margin-left: 230px;
+  max-width: 1150px; }
 
 #arrow {
   position: fixed;
@@ -581,28 +658,6 @@ p {
     transform: rotate(360deg); } }
 
 @media screen and (max-width: 991px) {
-  #sidebar {
-    width: 100%;
-    height: 150px;
-    display: grid;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    #sidebar .inner-sidebar {
-      width: 100%;
-      height: 100%; }
-      #sidebar .inner-sidebar .hero {
-        display: none; }
-      #sidebar .inner-sidebar .logo-image {
-        width: 70px;
-        border: 3px solid #28a7e9;
-        margin: 10px auto; }
-      #sidebar .inner-sidebar ul {
-        display: inline-block;
-        margin-top: 10px; }
-        #sidebar .inner-sidebar ul li {
-          display: inline-block;
-          padding: 0px 10px; }
   #about {
     height: auto;
     margin-left: 0px;
@@ -639,8 +694,6 @@ p {
       max-width: 500px; } }
 
 @media screen and (max-width: 544px) {
-  #sidebar {
-    height: 200px; }
   #about {
     padding-top: 200px; }
     #about h1 {
@@ -649,3 +702,23 @@ p {
       font-size: 16px; }
   #contact #confirmation {
     max-width: 270px; } }
+
+body {
+  overflow: hidden; }
+
+.loaded {
+  overflow: auto; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  z-index: 100;
+  position: relative; }
+
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #272c33; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #28a7e9;
+  height: 200px; }

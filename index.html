@@ -38,19 +38,19 @@
     </div>  <!-- End of Arrow -->
     
     <!-- Sidebar -->
-    <div id="sidebar">
+    <div id="sidebar" class="visible-md visible-lg">
       <div class="inner-sidebar">
         <div class="hero">
           <h1>Omerko</h1>
         </div>
 
-        <a href="#">
+        <a href="#about">
           <img src="./images/7f8eddbfe3ed865f5ae4302fe19c252c.jpg" alt="Logo Image" class="img-responsive logo-image">
         </a>  <!-- End of Logo -->
 
         <!-- Navigation for Sections -->
-        <ul class="list-unstyled">
-          <li><a href="#about">About</a></li>
+        <ul class="list-unstyled" id="menu-center">
+          <li><a href="#about" class="active">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -60,6 +60,35 @@
         </ul> <!-- End of Navigation for Sections -->
       </div>  <!-- End of Inner Sidebar -->
     </div>  <!-- End of Sidebar -->
+
+    <!-- Responsive Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top visible-xs visible-sm">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#res_nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#about" class="logo">
+            <img src="./images/7f8eddbfe3ed865f5ae4302fe19c252c.jpg" alt="Logo Image">
+          </a>
+        </div>  <!-- End of Navbar Header -->
+
+        <div class="collapse navbar-collapse" id="res_nav">
+          <ul class="nav navbar-nav navbar-right" id="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul> <!-- End of Navbar Links -->
+        </div>  <!-- End of Navbar Collapse -->
+      </div>  <!-- End of Container -->
+    </div>  <!-- End of Responsive Navigation -->
 
     <!-- About -->
 
@@ -227,6 +256,18 @@
         </div>  <!-- End of Row -->
       </div>  <!-- End of Container -->
     </section>  <!-- End of Skills --> 
+
+    <!-- Portfolio -->
+
+    <section id="portfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Portfolio</h2>
+          </div>
+        </div>
+      </div>
+    </section>  <!-- End of Portfolio -->
 
     <!-- Interests -->
 

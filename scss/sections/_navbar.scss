@@ -1,0 +1,70 @@
+// Navbar
+.navbar {
+  background-color: $main-bg;
+  padding: 20px 0px;
+  z-index: 10;
+  .navbar-header {
+    float: none;
+    .logo {
+      img {
+        width: 80px;
+        height: 80px;
+        border: 3px solid $main-blue;
+        padding: 0px;
+        @include border-radius(100%);
+      }
+    }
+  }
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+    margin-top: 20px;
+    border: 2px solid $main-blue;
+    @include transition(all linear 0.4s);
+    &:hover, &:active, &:focus {
+      background-color: $white;
+    }
+    .icon-bar {
+      background: $main-blue;
+    }
+  }
+
+  .navbar-collapse {
+    overflow: hidden;
+    .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+      text-align: center;
+      li {
+        float: none;
+        font-size: 16px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 10px 0px;
+        a {
+          display: inline;
+          color: $white;
+          text-decoration: none;
+          @include transition(all linear 0.3s);
+          &:hover, &:active, &:focus {
+              color: $main-blue;
+          }
+        }
+        .active {
+          color: $main-blue !important;
+        }
+      }
+    }
+  }
+
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+
+  .collapse.in {
+    display:block !important;
+  } 
+}
