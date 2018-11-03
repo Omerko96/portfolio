@@ -1,3 +1,19 @@
+// Screens between 1300px and 991px
+@media screen 
+and (min-width: 992px)
+and (max-width: 1300px) {
+    
+    // Portfolio
+    #portfolio {
+        figure {
+            min-width: 230px !important;
+            h2{
+                font-size: 24px !important;
+            }
+        }
+    }
+} 
+
 // Screens below 991px
 @media screen and (max-width: 991px) {
 
@@ -36,6 +52,23 @@
         text-align: center;
     }
 
+    // Portfolio
+    #portfolio {
+        height: auto;
+        text-align: center;
+        margin-left: 0px;
+        justify-content: center;
+        .grid {
+            margin-right: 0px !important;
+            figure {
+                display: block;
+                margin: 0 auto !important;
+                float: none !important;
+                width: 420px !important;
+            }
+        }
+    }
+
     // Interests
     #interests {
         height: auto;
@@ -64,6 +97,7 @@
     // About Section
     #about {
         padding-top: 200px;
+        justify-content: center;
         h1 {
             font-size: 46px;
         }
@@ -72,9 +106,24 @@
         }
     }
 
+    // Contact
     #contact {
         #confirmation {
             max-width: 270px;;
+        }
+    }
+
+    // Portfolio
+    #portfolio {
+        .col-md-4 {
+            
+        }
+        .grid {
+            margin: auto 20px !important;
+            figure {
+                min-width: 100px !important;
+                width: 300px !important;
+            }
         }
     }
 }
