@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Omerko - Portfolio</title>
+    <title>Omerko</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Master Css -->
     <link rel="stylesheet" href="css/_styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" sizes="16x16"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <!-- Main Font -->
@@ -44,9 +46,7 @@
           <h1>Omerko</h1>
         </div>
 
-        <a href="#about">
-          <img src="./images/7f8eddbfe3ed865f5ae4302fe19c252c.jpg" alt="Logo Image" class="img-responsive logo-image">
-        </a>  <!-- End of Logo -->
+        <a href="#about" class="logo"></a>  <!-- End of Logo -->
 
         <!-- Navigation for Sections -->
         <ul class="list-unstyled" id="menu-center">
@@ -71,9 +71,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#about" class="logo">
-            <img src="./images/7f8eddbfe3ed865f5ae4302fe19c252c.jpg" alt="Logo Image">
-          </a>
+          <a href="#about" class="logo"></a>
         </div>  <!-- End of Navbar Header -->
 
         <div class="collapse navbar-collapse" id="res_nav">
@@ -97,7 +95,7 @@
         <div class="row">
           <div class="col-xs-12">
             <h1>Stefan <span class="blue">Omerovic</span></h1>
-            <span class="sub-heading">Serbia - Valjevo - Sedlari - <a href="mailto:stefan.omerovic96@gmail.com"><span class="blue">stefan.omerovic@gmail.com</span></a></span>
+            <span class="sub-heading">Serbia - Valjevo - Sedlari - <a href="mailto:stefan.omerovic96@gmail.com"><span class="blue">stefan.omerovic96@gmail.com</span></a></span>
             <p>I am <span class="blue">Front End Web Developer</span> with more than 4 years of experience. Highly communicative person who is able to work in teams and also as a solo player. Coding with clean code, full responsive and in pixel perfect. Highly experienced in frameworks like Bootstrap and Angular.</p>
             <a href="https://www.facebook.com/stefanblade.omerovic" class="fa fa-facebook social-icon"></a>
             <a href="https://www.instagram.com/omerko96/?hl=en" class="fa fa-instagram social-icon"></a>
@@ -373,7 +371,7 @@
         <div class="row">
           <div class="col-xs-12">
             <p>If you wish, you can contact me here directly.</p>
-            <form id="contact_form">
+            <form id="contact_form" method="post" action="./php/contact-form.php">
               <div class="form-group">
                 <label for="firstName">First Name:</label>
                 <input type="text" class="form-control input-field" id="firstName" name="firstName" placeholder="Your First Name" required>

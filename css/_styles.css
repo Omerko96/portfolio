@@ -86,17 +86,22 @@ p {
   #sidebar .inner-sidebar {
     width: 100%;
     height: 60%; }
-    #sidebar .inner-sidebar .logo-image {
-      display: block;
-      margin: 0 auto;
+    #sidebar .inner-sidebar .logo {
       width: 150px;
       height: 150px;
       border: 5px solid #28a7e9;
+      background-color: #ffffff;
+      display: block;
+      margin: 0 auto;
       -webkit-border-radius: 100%;
       -moz-border-radius: 100%;
       -ms-border-radius: 100%;
       -o-border-radius: 100%;
-      border-radius: 100%; }
+      border-radius: 100%;
+      background-image: url("../../images/logo.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
     #sidebar .inner-sidebar ul {
       margin: 40px; }
       #sidebar .inner-sidebar ul li {
@@ -352,19 +357,27 @@ p {
 .navbar {
   background-color: #272c33;
   padding: 20px 0px;
-  z-index: 10; }
+  z-index: 10;
+  border: none; }
   .navbar .navbar-header {
     float: none; }
-    .navbar .navbar-header .logo img {
+    .navbar .navbar-header .logo {
       width: 80px;
       height: 80px;
-      border: 3px solid #28a7e9;
-      padding: 0px;
+      border: 5px solid #28a7e9;
+      background-color: #ffffff;
+      display: block;
+      float: left;
+      margin: 0 auto 0 10px;
       -webkit-border-radius: 100%;
       -moz-border-radius: 100%;
       -ms-border-radius: 100%;
       -o-border-radius: 100%;
-      border-radius: 100%; }
+      border-radius: 100%;
+      background-image: url("../../images/logo.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
   .navbar .navbar-right {
     float: none !important; }
   .navbar .navbar-toggle {
@@ -381,7 +394,13 @@ p {
     .navbar .navbar-toggle .icon-bar {
       background: #28a7e9; }
   .navbar .navbar-collapse {
-    overflow: hidden; }
+    overflow: hidden;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none; }
     .navbar .navbar-collapse .navbar-nav {
       float: none !important;
       margin-top: 7.5px;
@@ -645,7 +664,6 @@ figure.effect-julia:hover p {
 
 .hero {
   text-align: center;
-  margin-top: -200px;
   margin-bottom: 50px;
   display: grid;
   -webkit-box-align: center;
@@ -882,7 +900,7 @@ figure.effect-julia:hover p {
 
 @media screen and (max-width: 544px) {
   #about {
-    padding-top: 200px;
+    padding-top: 140px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
@@ -890,13 +908,25 @@ figure.effect-julia:hover p {
       font-size: 46px; }
     #about .sub-heading {
       font-size: 16px; }
-  #contact #confirmation {
-    max-width: 270px; }
-  #portfolio .grid {
-    margin: auto 20px !important; }
-    #portfolio .grid figure {
-      min-width: 100px !important;
-      width: 300px !important; } }
+  #services {
+    padding-top: 130px; }
+  #experience {
+    padding-top: 130px; }
+  #skills {
+    padding-top: 130px; }
+  #portfolio {
+    padding-top: 130px; }
+    #portfolio .grid {
+      margin: auto 20px !important; }
+      #portfolio .grid figure {
+        min-width: 100px !important;
+        width: 300px !important; }
+  #interests {
+    padding-top: 130px; }
+  #contact {
+    padding-top: 130px; }
+    #contact #confirmation {
+      max-width: 270px; } }
 
 body {
   overflow: hidden; }

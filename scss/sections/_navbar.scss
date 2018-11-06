@@ -3,16 +3,22 @@
   background-color: $main-bg;
   padding: 20px 0px;
   z-index: 10;
+  border: none;
   .navbar-header {
     float: none;
     .logo {
-      img {
-        width: 80px;
-        height: 80px;
-        border: 3px solid $main-blue;
-        padding: 0px;
-        @include border-radius(100%);
-      }
+      width: 80px;
+      height: 80px;
+      border: 5px solid $main-blue;
+      background-color: $white;
+      display: block;
+      float: left;
+      margin: 0 auto 0 10px;
+      @include border-radius(100%);
+      background-image: url('../../images/logo.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
   .navbar-right {
@@ -33,6 +39,8 @@
 
   .navbar-collapse {
     overflow: hidden;
+    border: none;
+    @include box-shadow(none);
     .navbar-nav {
       float: none!important;
       margin-top: 7.5px;

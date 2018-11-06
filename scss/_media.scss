@@ -96,7 +96,7 @@ and (max-width: 1300px) {
 
     // About Section
     #about {
-        padding-top: 200px;
+        padding-top: 140px;
         justify-content: center;
         h1 {
             font-size: 46px;
@@ -106,15 +106,24 @@ and (max-width: 1300px) {
         }
     }
 
-    // Contact
-    #contact {
-        #confirmation {
-            max-width: 270px;;
-        }
+    // Services
+    #services {
+        padding-top: 130px;
     }
 
-    // Portfolio
+    // Experience
+    #experience {
+        padding-top: 130px;
+    }
+
+    // Skills
+    #skills {
+        padding-top: 130px;
+    }
+
+    // Portfolio 
     #portfolio {
+        padding-top: 130px;
         .col-md-4 {
             
         }
@@ -124,6 +133,19 @@ and (max-width: 1300px) {
                 min-width: 100px !important;
                 width: 300px !important;
             }
+        }
+    }
+
+    // Interests
+    #interests {
+        padding-top: 130px;
+    }
+
+    // Contact
+    #contact {
+        padding-top: 130px;
+        #confirmation {
+            max-width: 270px;;
         }
     }
 }
