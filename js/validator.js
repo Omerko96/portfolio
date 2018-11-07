@@ -24,10 +24,4 @@ $(document).ready(function() {
       }
     }
   });
-
-  validator.on('success.form.bv', function(e) {
-    e.preventDefault();
-    $('#contact_form').addClass('hidden');
-    $('#confirmation').removeClass('hidden');
-  });
 });
