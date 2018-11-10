@@ -32,7 +32,8 @@ body {
 }
 
 .loaded {
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 // Scrollbar

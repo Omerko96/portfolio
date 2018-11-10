@@ -932,7 +932,8 @@ body {
   overflow: hidden; }
 
 .loaded {
-  overflow: auto; }
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 ::-webkit-scrollbar {
   width: 10px;

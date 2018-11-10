@@ -1,2 +1,3 @@
-# portfolio
-My Portfolio
+# [My Portfolio](http://www.omerko.com/)
+
+Here you can see my porftolio, something about me, skills, services, projects etc...
