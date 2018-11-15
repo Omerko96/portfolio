@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <!-- Main Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <p class="go-back">Click Back Button to go back on my portfolio website</p>
+  <a href="../index.html" class="go-back-href">
+    <p>Go back</p>
+  </a>
+  
+  <div class="main-container">
+    <form id="calc_form" name="calculation">
+      <input type="text" name="viewer" class="viewer">
+    </form> <!-- End of Form -->
+
+    <table class="table">
+      <tr>
+        <td><input type="button" class="button" value="+"></td>
+        <td><input type="button" class="button" value="-"></td>
+        <td><input type="button" class="button" value="*"></td>
+        <td><input type="button" class="button" value="/"></td>
+      </tr>
+
+      <tr>
+        <td><input type="button" class="button" value="7"></td>
+        <td><input type="button" class="button" value="8"></td>
+        <td><input type="button" class="button" value="9"></td>
+        <td><input type="button" class="button back" value="<"></td>
+      </tr>
+
+      <tr>
+        <td><input type="button" class="button" value="4"></td>
+        <td><input type="button" class="button" value="5"></td>
+        <td><input type="button" class="button" value="6"></td>
+        <td><input type="button" class="button clear" value="C"></td>
+      </tr>
+
+      <tr>
+        <td><input type="button" class="button" value="1"></td>
+        <td><input type="button" class="button" value="2"></td>
+        <td><input type="button" class="button" value="3"></td>
+        <td rowspan="5"><input type="button" class="button equal" value="="></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><input type="button" class="button zero-btn" value="0"></td>
+        <td><input type="button" class="button" value="."></td>
+      </tr>
+    </table>  <!-- End of Table -->
+
+  </div>  <!-- End of Main Container -->
+
+  <script src="main.js"></script>
+</body>
+</html>
