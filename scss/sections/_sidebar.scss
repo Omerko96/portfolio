@@ -1,7 +1,7 @@
 // Sidebar
 #sidebar {
     width: 230px;
-    height: 100vh;
+    min-height: 100vh;
     position: fixed;
     background-color: $main-bg;
     display: grid;

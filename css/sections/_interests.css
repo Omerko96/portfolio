@@ -1,4 +1,5 @@
 #interests {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   -webkit-box-align: center;
@@ -7,6 +8,6 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 230px;
   max-width: 1150px; }
