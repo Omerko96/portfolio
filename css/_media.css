@@ -1,0 +1,89 @@
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  #portfolio figure {
+    min-width: 230px !important; }
+    #portfolio figure h2 {
+      font-size: 24px !important; } }
+
+@media screen and (max-width: 991px) {
+  #about {
+    margin-left: 0px;
+    padding-top: 150px;
+    text-align: center; }
+  #services {
+    margin-left: 0px;
+    text-align: center; }
+  #experience {
+    margin-left: 0px;
+    text-align: center; }
+    #experience h6 span {
+      display: block;
+      float: none; }
+  #skills {
+    margin-left: 0px;
+    text-align: center; }
+  #portfolio {
+    text-align: center;
+    margin-left: 0px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #portfolio .grid {
+      margin-right: 0px !important; }
+      #portfolio .grid figure {
+        display: block;
+        margin: 0 auto !important;
+        float: none !important;
+        width: 420px !important; }
+  #interests {
+    margin-left: 0px;
+    text-align: center; }
+  #contact {
+    display: block;
+    margin-left: 0px;
+    text-align: center; }
+    #contact #confirmation {
+      display: block;
+      margin: 30px auto;
+      max-width: 500px; } }
+
+@media screen and (max-width: 544px) {
+  #about {
+    padding-top: 140px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #about h1 {
+      font-size: 46px; }
+    #about .sub-heading {
+      font-size: 16px; }
+  #services {
+    padding-top: 130px; }
+  #experience {
+    padding-top: 130px; }
+  #skills {
+    padding-top: 130px; }
+  #portfolio {
+    padding-top: 130px; }
+    #portfolio .grid {
+      margin: auto 20px !important; }
+      #portfolio .grid figure {
+        min-width: 100px !important;
+        width: 300px !important; }
+  #interests {
+    padding-top: 130px; }
+  #contact {
+    padding-top: 130px; }
+    #contact #confirmation {
+      max-width: 270px; } }
+
+@media screen and (max-height: 800px) and (min-width: 991px) {
+  #sidebar .hero {
+    display: none; }
+  #sidebar {
+    display: -ms-grid !important;
+    display: grid !important;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    -ms-flex-line-pack: center;
+    align-content: center; } }

@@ -19,7 +19,6 @@ and (max-width: 1300px) {
 
     // About Section
     #about {
-        height: auto;
         margin-left: 0px;
         padding-top: 150px;
         text-align: center;
@@ -27,14 +26,12 @@ and (max-width: 1300px) {
 
     // Services Section
     #services {
-        height: auto;;
         margin-left: 0px;
         text-align: center;
     }
 
     // Experience
     #experience {
-        height: auto;
         margin-left: 0px;
         text-align: center;
         h6 {
@@ -47,14 +44,12 @@ and (max-width: 1300px) {
 
     // Skills
     #skills {
-        height: auto;
         margin-left: 0px;
         text-align: center;
     }
 
     // Portfolio
     #portfolio {
-        height: auto;
         text-align: center;
         margin-left: 0px;
         justify-content: center;
@@ -71,20 +66,17 @@ and (max-width: 1300px) {
 
     // Interests
     #interests {
-        height: auto;
         margin-left: 0px;
         text-align: center;
     }
 
     // Contact
     #contact {
-        height: auto;
         display: block;
         margin-left: 0px;
         text-align: center;
         #confirmation {
             display: block;
-            height: auto;
             margin: 30px auto;
             max-width: 500px;
         }
@@ -148,4 +140,21 @@ and (max-width: 1300px) {
             max-width: 270px;;
         }
     }
+}
+
+// Screens Below 800px of HEIGHT
+@media screen 
+and ( max-height: 800px )
+and ( min-width: 991px ) {
+
+    // Sidebar
+    #sidebar .hero {
+        display: none;
+    }
+    #sidebar {
+        display: grid !important;
+        align-items: unset;
+        align-content: center;
+    }
+
 }

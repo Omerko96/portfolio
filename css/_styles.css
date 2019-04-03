@@ -75,9 +75,10 @@ p {
 
 #sidebar {
   width: 230px;
-  height: 100vh;
+  min-height: 100vh;
   position: fixed;
   background-color: #272c33;
+  display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -125,6 +126,7 @@ p {
           color: #28a7e9 !important; }
 
 #about {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   -webkit-box-align: center;
@@ -133,9 +135,10 @@ p {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 230px;
-  max-width: 1150px; }
+  max-width: 1150px;
+  z-index: 2; }
   #about .sub-heading {
     font-size: 22px;
     text-transform: uppercase;
@@ -150,6 +153,7 @@ p {
     padding: 30px 0px; }
 
 #services {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   -webkit-box-align: center;
@@ -158,7 +162,7 @@ p {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 230px;
   max-width: 1150px; }
   #services .service-block {
@@ -183,6 +187,7 @@ p {
       transform: rotateY(180deg); }
 
 #experience {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   -webkit-box-align: center;
@@ -191,7 +196,7 @@ p {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 230px;
   max-width: 1150px; }
   #experience h4 {
@@ -206,6 +211,7 @@ p {
       color: #28a7e9; }
 
 #skills {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   -webkit-box-align: center;
@@ -214,11 +220,12 @@ p {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 230px;
   max-width: 1150px; }
 
 #interests {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   -webkit-box-align: center;
@@ -227,11 +234,12 @@ p {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 230px;
   max-width: 1150px; }
 
 #contact {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   -webkit-box-align: center;
@@ -240,7 +248,7 @@ p {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 230px;
   max-width: 1150px; }
   #contact .row:nth-child(2) {
@@ -304,6 +312,7 @@ p {
     height: 250px;
     background-color: #ffffff;
     border: 2px solid #28a7e9;
+    display: -ms-grid;
     display: grid;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -431,6 +440,7 @@ p {
     display: block !important; }
 
 #portfolio {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   -webkit-box-align: center;
@@ -439,7 +449,7 @@ p {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 230px;
   max-width: 1150px; }
   #portfolio .code-snippets {
@@ -667,6 +677,7 @@ figure.effect-julia:hover p {
 .hero {
   text-align: center;
   margin-bottom: 50px;
+  display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -852,27 +863,22 @@ figure.effect-julia:hover p {
 
 @media screen and (max-width: 991px) {
   #about {
-    height: auto;
     margin-left: 0px;
     padding-top: 150px;
     text-align: center; }
   #services {
-    height: auto;
     margin-left: 0px;
     text-align: center; }
   #experience {
-    height: auto;
     margin-left: 0px;
     text-align: center; }
     #experience h6 span {
       display: block;
       float: none; }
   #skills {
-    height: auto;
     margin-left: 0px;
     text-align: center; }
   #portfolio {
-    height: auto;
     text-align: center;
     margin-left: 0px;
     -webkit-box-pack: center;
@@ -886,17 +892,14 @@ figure.effect-julia:hover p {
         float: none !important;
         width: 420px !important; }
   #interests {
-    height: auto;
     margin-left: 0px;
     text-align: center; }
   #contact {
-    height: auto;
     display: block;
     margin-left: 0px;
     text-align: center; }
     #contact #confirmation {
       display: block;
-      height: auto;
       margin: 30px auto;
       max-width: 500px; } }
 
@@ -929,6 +932,18 @@ figure.effect-julia:hover p {
     padding-top: 130px; }
     #contact #confirmation {
       max-width: 270px; } }
+
+@media screen and (max-height: 800px) {
+  #sidebar .hero {
+    display: none; }
+  #sidebar {
+    display: -ms-grid !important;
+    display: grid !important;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    -ms-flex-line-pack: center;
+    align-content: center; } }
 
 body {
   overflow: hidden; }
