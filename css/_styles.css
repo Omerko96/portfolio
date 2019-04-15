@@ -938,6 +938,18 @@ figure.effect-julia:hover p {
     #contact #confirmation {
       max-width: 270px; } }
 
+@media screen and (max-height: 800px) {
+  #sidebar .hero {
+    display: none; }
+  #sidebar {
+    display: -ms-grid !important;
+    display: grid !important;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    -ms-flex-line-pack: center;
+    align-content: center; } }
+
 body {
   overflow: hidden; }
 

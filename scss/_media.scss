@@ -146,3 +146,18 @@ and (max-width: 1300px) {
         }
     }
 }
+
+// Screens Below 800px of HEIGHT
+@media screen and (max-height: 800px) {
+
+    // Sidebar
+    #sidebar .hero {
+        display: none;
+    }
+    #sidebar {
+        display: grid !important;
+        align-items: unset;
+        align-content: center;
+    }
+
+}

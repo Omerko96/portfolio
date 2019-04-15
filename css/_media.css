@@ -75,15 +75,3 @@
     padding-top: 130px; }
     #contact #confirmation {
       max-width: 270px; } }
-
-@media screen and (max-height: 800px) and (min-width: 991px) {
-  #sidebar .hero {
-    display: none; }
-  #sidebar {
-    display: -ms-grid !important;
-    display: grid !important;
-    -webkit-box-align: unset;
-    -ms-flex-align: unset;
-    align-items: unset;
-    -ms-flex-line-pack: center;
-    align-content: center; } }
