@@ -20,13 +20,14 @@ and (max-width: 1300px) {
     // About Section
     #about {
         margin-left: 0px;
-        padding-top: 150px;
+        padding-top: 100px;
         text-align: center;
     }
 
     // Services Section
     #services {
         margin-left: 0px;
+        padding-top: 100px;
         text-align: center;
     }
 
@@ -34,6 +35,7 @@ and (max-width: 1300px) {
     #experience {
         margin-left: 0px;
         text-align: center;
+        padding-top: 100px;
         h6 {
             span {
                 display: block;
@@ -45,6 +47,7 @@ and (max-width: 1300px) {
     // Skills
     #skills {
         margin-left: 0px;
+        padding-top: 100px;
         text-align: center;
     }
 
@@ -53,6 +56,7 @@ and (max-width: 1300px) {
         text-align: center;
         margin-left: 0px;
         justify-content: center;
+        padding-top: 100px;
         .grid {
             margin-right: 0px !important;
             figure {
@@ -75,6 +79,7 @@ and (max-width: 1300px) {
         display: block;
         margin-left: 0px;
         text-align: center;
+        padding-top: 100px;
         #confirmation {
             display: block;
             margin: 30px auto;
@@ -140,21 +145,4 @@ and (max-width: 1300px) {
             max-width: 270px;;
         }
     }
-}
-
-// Screens Below 800px of HEIGHT
-@media screen 
-and ( max-height: 800px )
-and ( min-width: 991px ) {
-
-    // Sidebar
-    #sidebar .hero {
-        display: none;
-    }
-    #sidebar {
-        display: grid !important;
-        align-items: unset;
-        align-content: center;
-    }
-
 }

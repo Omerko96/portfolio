@@ -864,26 +864,30 @@ figure.effect-julia:hover p {
 @media screen and (max-width: 991px) {
   #about {
     margin-left: 0px;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center; }
   #services {
     margin-left: 0px;
+    padding-top: 100px;
     text-align: center; }
   #experience {
     margin-left: 0px;
-    text-align: center; }
+    text-align: center;
+    padding-top: 100px; }
     #experience h6 span {
       display: block;
       float: none; }
   #skills {
     margin-left: 0px;
+    padding-top: 100px;
     text-align: center; }
   #portfolio {
     text-align: center;
     margin-left: 0px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: 100px; }
     #portfolio .grid {
       margin-right: 0px !important; }
       #portfolio .grid figure {
@@ -897,7 +901,8 @@ figure.effect-julia:hover p {
   #contact {
     display: block;
     margin-left: 0px;
-    text-align: center; }
+    text-align: center;
+    padding-top: 100px; }
     #contact #confirmation {
       display: block;
       margin: 30px auto;
@@ -932,18 +937,6 @@ figure.effect-julia:hover p {
     padding-top: 130px; }
     #contact #confirmation {
       max-width: 270px; } }
-
-@media screen and (max-height: 800px) {
-  #sidebar .hero {
-    display: none; }
-  #sidebar {
-    display: -ms-grid !important;
-    display: grid !important;
-    -webkit-box-align: unset;
-    -ms-flex-align: unset;
-    align-items: unset;
-    -ms-flex-line-pack: center;
-    align-content: center; } }
 
 body {
   overflow: hidden; }
