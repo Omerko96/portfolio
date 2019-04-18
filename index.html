@@ -401,7 +401,7 @@
         <div class="row">
           <div class="col-xs-12">
             <p>If you wish, you can contact me here directly.</p>
-            <form id="contact_form" action="https://formspree.io/omerko1996@gmail.com" method="POST">
+            <form id="contact_form" data-netlify="true" method="POST">
               <div class="form-group">
                 <label for="firstName">First Name:</label>
                 <input type="text" class="form-control input-field" id="firstName" name="firstName" placeholder="Your First Name" required>
@@ -421,6 +421,10 @@
                 <label for="message">Message:</label>
                 <textarea name="message" id="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
               </div>  <!-- End of Form Group -->
+
+              <div class="form-group">
+                <div data-netlify-racaptcha="true"></div>
+              </div>
 
               <div class="form-group">
                 <input type="submit" class="btn" value="Submit">
