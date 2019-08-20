@@ -1,0 +1,14 @@
+.row {
+    margin: 0px 10px;
+}
+.block {
+    background-color: #7C5CBF;
+    color: #ffffff;
+    padding: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+}
+.block p {
+    margin: 0px;
+}
